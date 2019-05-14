@@ -10,7 +10,7 @@ def Matrix(a,b,i):
         C[i][j] = sum(map(lambda x,y: x*y, a[i], b[j]))
 
 for i in range (len(A)):
-     threading.Thread(target=matrix, args=(A,B,i)).start()
+     threading.Thread(target=Matrix, args=(A,B,i)).start()
         
 print("Результат:")
 print(C)
