@@ -14,3 +14,7 @@ for i in range (len(A)):
         
 print("Результат:")
 print(C)
+
+if __name__ == "__main__":
+    thread = Matrix(A,B,i)
+    print("Everything passed")
